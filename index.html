@@ -6,61 +6,197 @@
     <title>Gender Dress-Up</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nothing You Could Do">
-    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Acme">
+
     <!-- importing the jquery library -->
     <script src="jquery-3.7.1.js"></script>
 
 </head>
 <body>
 
+    <div id="infobackground"></div>
+
     <div id="wardrobe">
-
-        <div id="clothing">
-
-            <img class="top" id="" src="media/images/shirt.png">
-            <img class="top" id="" src="media/images/shirt.png">
-            <img class="top" id="" src="media/images/shirt.png">
-            <img class="top" id="" src="media/images/shirt.png">
-            <img class="top" id="" src="media/images/shirt.png">
-            <img class="top" id="" src="media/images/shirt.png">
-            <img class="top" id="" src="media/images/shirt.png">
-            <img class="top" id="" src="media/images/shirt.png">
-            <img class="top" id="" src="media/images/shirt.png">
-            <img class="top" id="" src="media/images/shirt.png">
-            <img class="top" id="" src="media/images/shirt.png">
-            <img class="top" id="" src="media/images/shirt.png">
-            <img class="top" id="" src="media/images/shirt.png">
-            <img class="top" id="" src="media/images/shirt.png">
-            <img class="top" id="" src="media/images/shirt.png">
-            
+        <div class="clothing active" id="shirt">
+            <table>
+                <tr>
+                    <td><img class="shirtnone" src="media/images/none.png"></td>
+                    <td><img class="shirt" href=".s1" src="media/images/clothing-icons/tank.png"></td>
+                </tr><tr>
+                    <td><img class="shirt" href=".s2" src="media/images/clothing-icons/buttonup.png"></td>
+                    <td><img class="shirt" href=".s3" src="media/images/clothing-icons/coldshoulderknit.png"></td>
+                </tr><tr>
+                    <td><img class="shirt" href=".s4" src="media/images/clothing-icons/sweetheart.png"></td>
+                    <td><img class="shirt" href=".s5" src="media/images/clothing-icons/shirtwbow.png"></td>
+                </tr>
+            </table>  
         </div>
 
+
+        <div class="clothing" id="dress">
+            <table>
+                <tr>
+                    <td><img class="dressnone" src="media/images/none.png"></td>
+                    <td><img class="dress" href=".d1" src="media/images/clothing-icons/asym.png"></td>
+                </tr>
+                <tr>
+                    <td><img class="dress" href=".d2" src="media/images/clothing-icons/romper.png"></td>
+                    <td><img class="dress" href=".d3" src="media/images/clothing-icons/bodycon.png"></td>
+                </tr>
+                <tr>
+                    <td><img class="dress" href=".d4" src="media/images/clothing-icons/slitdress.png"></td>
+                </tr>
+        
+            </table>
+        </div>
+
+        <div class="clothing" id="jacket">
+            <table>
+                <tr>
+                    <td><img class="jacketnone" src="media/images/none.png"></td>
+                    <td><img class="jacket" href=".j1" src="media/images/clothing-icons/crophood.png"></td>
+                    
+                    
+                </tr>
+                <tr>
+                    <td><img class="jacket" href=".j2" src="media/images/clothing-icons/cardigan.png"></td>
+                    <td><img class="jacket" href=".j3" src="media/images/clothing-icons/furhood.png"></td>
+                    
+                </tr>
+                <tr>
+                    <td><img class="jacket" href=".j4" src="media/images/clothing-icons/starjacket.png"></td>
+                    <td><img class="jacket" href=".j5" src="media/images/clothing-icons/leatherjacket.png"></td>
+                </tr>
+        
+            </table>  
+        </div>
+
+
+        <div class="clothing" id="pants">
+            <table>
+                <tr>
+                    <td><img class="pantsnone" src="media/images/none.png"></td>
+                    <td><img class="pants" href=".p1" src="media/images/clothing-icons/shortshort.png"></td>
+                    
+                    
+                </tr>
+                <tr>
+                    <td><img class="pants" href=".p2" src="media/images/clothing-icons/distressed.png"></td>
+                    <td><img class="pants" href=".p3" src="media/images/clothing-icons/skirt.png"></td>
+                    
+                </tr>
+                <tr>
+                    <td><img class="pants" href=".p4" src="media/images/clothing-icons/skinnyjeans.png"></td>
+                    <td><img class="pants" href=".p5" src="media/images/clothing-icons/overalls.png"></td>
+                </tr>
+        
+            </table>   
+        </div>
+
+
         <div id="categories">
-            <img class="top" id="" src="media/images/shirt.png">
-            <img class="top" id="" src="media/images/shirt.png">
-            <img class="top" id="" src="media/images/shirt.png">
-            <img class="top" id="" src="media/images/shirt.png">
-            <img class="top" id="" src="media/images/shirt.png"> 
+            <img class="category" href="#shirt" src="media/images/shirt-category.png">
+            <img class="category" href="#dress" src="media/images/dress-category.png">
+            <img class="category" href="#jacket" src="media/images/jacket-category.png">
+            <img class="category" href="#pants" src="media/images/pants-category.png">
+
         </div>
 
     </div>
     
     <div id="tag">
-        <h1>Text</h1>
-        <p>changing text</p>
+        <h1>Pronouns</h1>
+        <div id="content-1">she/her</div>
+        <div id="content-13">ze/zir</div>
+        <div id="content-11">they/he/she</div>
+        <div id="content-2">he/him</div>
+        <div id="content-10">they/she/he</div>
+        <div id="content-3">they/them</div>
+        <div id="content-9">she/he/they</div>
+        <div id="content-7">they/he</div>
+        <div id="content-4">she/they</div>
+        <div id="content-12">xe/xem</div>
+        <div id="content-5">he/they</div>
+        <div id="content-6">they/she</div>
+        <div id="content-8">he/she/they</div>
+        
     </div>
     
+<div class="manequins">
 
-    <img src="media/images/stickfigure.png" id="manequin">
+    <div class="manequinoptions">
+        <img class="manequin active" id="amab1" src="media/images/body1.png" >
+        <img class="manequin" id="afab1" src="media/images/body2.png" >
+        <img class="manequin" id="afab2" src="media/images/body3.png" >
+        <img class="manequin" id="amab2" src="media/images/body4.png">
+    </div>
 
+        <img class="manequinshirt s1" id="s1m" src="media/images/clothing-images/shirt/tank-masc.png">
+        <img class="manequinshirt s2" id="s2m" src="media/images/clothing-images/shirt/button-masc.png">
+        <img class="manequinshirt s3" id="s3m" src="media/images/clothing-images/shirt/knit-masc.png">
+        <img class="manequinshirt s4" id="s4m" src="media/images/clothing-images/shirt/sweetheart-masc.png">
+        <img class="manequinshirt s5" id="s5m" src="media/images/clothing-images/shirt/bow-masc.png">
+        
+        <img class="manequindress d1" id="d1m" src="media/images/clothing-images/onepiece/asym-masc.png">
+        <img class="manequindress d2" id="d2m" src="media/images/clothing-images/onepiece/romper.png">
+        <img class="manequindress d3" id="d3m" src="media/images/clothing-images/onepiece/bodycon-masc.png">
+        <img class="manequindress d4" id="d4m" src="media/images/clothing-images/onepiece/slit-masc.png">
+
+        <img class="manequinjacket j1" id="j1m" src="media/images/clothing-images/jacket/crop-masc.png">
+        <img class="manequinjacket j2" id="j2m" src="media/images/clothing-images/jacket/cardigan-masc.png">
+        <img class="manequinjacket j3" id="j3m" src="media/images/clothing-images/jacket/fur-masc.png">
+        <img class="manequinjacket j4" id="j4m" src="media/images/clothing-images/jacket/star.png">
+        <img class="manequinjacket j5" id="j5m" src="media/images/clothing-images/jacket/leather.png">
+        
+        <img class="manequinpants p1" id="p1m" src="media/images/clothing-images/pants/shortshort-masc.png">
+        <img class="manequinpants p2" id="p2m" src="media/images/clothing-images/pants/distressed.png">
+        <img class="manequinpants p3" id="p3m" src="media/images/clothing-images/pants/skirt.png">
+        <img class="manequinpants p4" id="p4m" src="media/images/clothing-images/pants/skinny.png">
+        <img class="manequinpants p5" id="p5m" src="media/images/clothing-images/pants/overalls-masc.png">
+
+
+    <!-- Clothing that fits body3/4 but I can't get it to work -->
+        <!-- <img class="manequinshirt s1" id="s1f" src="media/images/clothing-images/shirt/tank-fem.png">
+        <img class="manequinshirt s2" id="s2f" src="media/images/clothing-images/shirt/button-fem.png">
+        <img class="manequinshirt s3" id="s3f" src="media/images/clothing-images/shirt/knit-fem.png">
+        <img class="manequinshirt s4" id="s4f" src="media/images/clothing-images/shirt/sweetheart-fem.png"> 
+        <img class="manequinshirt s5" id="s5f" src="media/images/clothing-images/shirt/bow-fem.png">
+
+        <img class="manequindress d1" id="d1f" src="media/images/clothing-images/onepiece/asym-fem.png">
+        <img class="manequindress d2" id="d2f" src="media/images/clothing-images/onepiece/romper.png">
+        <img class="manequindress d3" id="d3f" src="media/images/clothing-images/onepiece/bodycon-fem.png">
+        <img class="manequindress d4" id="d4f" src="media/images/clothing-images/onepiece/slit-fem.png">
+
+        <img class="manequinjacket j1" id="j1f" src="media/images/clothing-images/jacket/crop-fem.png">
+        <img class="manequinjacket j2" id="j2f" src="media/images/clothing-images/jacket/cardigan-fem.png">
+        <img class="manequinjacket j3" id="j3f" src="media/images/clothing-images/jacket/fur-fem.png">
+        <img class="manequinjacket j4" id="j4f" src="media/images/clothing-images/jacket/star.png">
+        <img class="manequinjacket j5" id="j5f" src="media/images/clothing-images/jacket/leather.png"> -->
+
+        <!-- <img class="manequinpants p1" id="p1f" src="media/images/clothing-images/pants/shortshort-fem.png">
+        <img class="manequinpants p2" id="p2f" src="media/images/clothing-images/pants/distressed.png">
+        <img class="manequinpants p3" id="p3f" src="media/images/clothing-images/pants/skirt.png">
+        <img class="manequinpants p4" id="p4f" src="media/images/clothing-images/pants/skinny.png">
+        <img class="manequinpants p5" id="p5f" src="media/images/clothing-images/pants/overalls-fem.png"> -->
+</div>
 
     <div id="body-types">
 
-        <div id="bodytypeoption"><img src="media/images/stickfigure.png"></div>
-        <p>i</p>
-        <div id="bodytypeoption"><img src="media/images/stickfigure.png"></div>
-        <div id="bodytypeoption"><img src="media/images/stickfigure.png"></div>
-        <div id="bodytypeoption"><img src="media/images/stickfigure.png"></div>
+        <div id="body-type-options">
+
+            <div class="bodytypeoption" href="#amab1"><img src="media/images/body1.png"></div>
+            <div class="bodytypeoption" href="#afab1"><img src="media/images/body2.png"></div>
+            <div class="bodytypeoption" href="#afab2"><img src="media/images/body3.png"></div>
+            <div class="bodytypeoption" href="#amab2"><img src="media/images/body4.png"></div>
+        
+        </div>
+
+        <div >
+            <p id="infobutton"><b>i</b></p>
+            <p id="info">People come in a wide variety of shapes and sizes, and the options available here do not in any way come close to incapsulating the huge diversity that exists. Because I drew everything on this poster, I simplified the different options to make it easier to code. <br><br>
+            These are based off of my own proportions and I don't claim that this is what the standard human body is "supposed" to look like. Everyone is allowed to dress however they would like to.</p>
+            
+        </div>
 
     </div>
 

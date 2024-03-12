@@ -7,6 +7,21 @@ body{
     background-color: #F6F2EA;
 }
 
+body {
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+
+@font-face {
+    font-family: 'SF Scribbled Sans';
+    src: url('../media/fonts/TrueType/SFScribbledSans.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Brittany Rays';
+    src: url('../media/fonts/BrittanyRaysDemoRegular.ttf') format('truetype');
+}
+
 #wardrobe{
     display: inline-flex;
     width: 35vw;
@@ -15,13 +30,15 @@ body{
     background-color: #B9AA91;
 }
 
-#clothing{
-    display: flex;
-    overflow-y: auto;
-    flex-wrap: wrap;
-    margin: 15px 3px;
-    width: fit-content;
-    justify-content: space-around;
+.clothing table{
+    margin: 15px 9px;
+}
+
+.clothing td{
+    padding-bottom: 13px;
+    padding-left: 7px;
+    padding-right: 7px;
+    cursor: default;
 }
 
 #categories{
@@ -31,9 +48,13 @@ body{
     padding-top: 15px;
 }
 
-#clothing img{
-    width: 120px;
-    height: 120px;
+#shirt-fem{
+    background-color: lavender;
+}
+
+.clothing img{
+    width: 190px;
+    height: 190px;
     background-color: #FCFAF8;
     border-radius: 5px;
     margin: 0 2px;
@@ -42,66 +63,164 @@ body{
 #categories img{
     width: 70px;
     height: 70px;
-    margin-bottom: 40px;
-    background-color: #937972;
+    margin-bottom: 39px;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-#manequin{
+.manequins{
+    display: inline-block;
     position: absolute;
-    width: 300px;
-    height: 90%;
-    margin-left: 125px;
+    height: 95%;
+    margin-left: 6%;
     margin-top: 40px;
-    opacity: 50%;
+}
+
+.manequin{
+    position: absolute;
+    height: 95%;
+}
+
+.manequinshirt{
+    position: absolute;
+    height: 95%;
+    z-index: 0;
+}
+
+.manequindress{
+    position: absolute;
+    height: 95%;
+    z-index: 2;
+}
+
+.manequinjacket{
+    position: absolute;
+    height: 95%;
+    z-index: 3;
+}
+
+.manequinpants{
+    position: absolute;
+    height: 95%;
+    z-index: 1;
 }
 
 #tag{
-    position: relative;
     display: inline-block;
     width: 200px;
     height: 120px;
-    padding: 0px 10px;
+    padding: 0px 5px;
     rotate: -7deg;
     margin-left: 50px;
 }
+
 #tag h1{
     text-decoration: underline;
-    font-size: 55px;
+    font-size: 60px;
     color: #3E372D;
+    font-family: "Brittany Rays";
+    letter-spacing: 5px;
 }
 
-#tag p{
-    font-size: 32px;
+#tag div{
+    margin-top: -12px;
+    font-size: 60px;
     color: #767468;
-    font-family: "Nothing You Could Do";
+    font-family: "SF Scribbled Sans";
 }
 
 #body-types{
     display: inline-flex;
-    flex-wrap: wrap;
-    margin-left: 605px;
-    width: 80px;
-    row-gap: 14px;
 }
 
-#bodytypeoption{
+#body-type-options{
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin-left: 565px;
+    width: 80px;
+    row-gap: 15px;
+}
+
+.bodytypeoption{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
     background-color: #C9C6BD;
 }
 
 #body-types img{
     display: block;
-    height: 45px;
+    height: 55px;
 }
 
-#body-types p{
-    margin-left: 10px;
+#infobutton{
+    position: absolute;
+    display: inline-block;
+    text-align: center;
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    border: 2px solid #8A7559;
+    background-color: #D6B485;
+    color: #3E372D;
+    font-family: 'Acme', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-left: px;
+    margin-top: -14px;
+    cursor: pointer;
+    z-index: 6;
+    user-select: none;
 }
 
+#info{
+    position: absolute;
+    background-color: #F6F2EA;
+    border: 3px solid #B9AA91;
+    min-width: 250px;
+    color: #3E372D;
+    text-align: center;
+    font-family: 'Acme', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 22.5px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    margin-right: 73px;
+    margin-top: -3px;
+    padding: 14px 16px;
+    width: 250px;
+    right: 0;
+    z-index: 5;
+}
+
+#infobackground{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    z-index: 5;
+    opacity: 0.5;
+}
+
+.manequin:not(.active) {
+    display: none;
+}
+
+.clothing:not(.active) {
+    display: none;
+}
+
+.manequinshirt:not(.active) {
+    display: none;
+}
+
+.manequindress:not(.active) {
+    display: none;
+}
+
+.manequinjacket:not(.active) {
+    display: none;
+}
+
+.manequinpants:not(.active) {
+    display: none;
+}
